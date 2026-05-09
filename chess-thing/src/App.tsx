@@ -23,25 +23,24 @@ function App() {
           onClick={() => setPage("puzzles")}
           aria-current={page === "puzzles" ? "page" : undefined}
         >
-          Puzzles
+          Play
         </button>
       </nav>
 
       {page === "home" ? (
         <section className="page">
-          <h1>Practice your Chess with Puzzles</h1>
+          <h1>Play Chess over the board</h1>
           <button
           type="button"
           onClick={() => setPage("puzzles")}
           className="puzzle-button"
           >
-            Do Puzzles
+            Play
           </button>
         </section>
       ) : (
         <section className="page">
-          <h1>Puzzles</h1>
-          <p>Choose a puzzle set to get started.</p>
+          <h1>Play</h1>
         </section>
       )}
     </main>
