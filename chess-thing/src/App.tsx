@@ -1,5 +1,6 @@
 import "./App.css";
 import { useState } from "react";
+import { chessBoard as ChessBoard } from "./components/chessboard.tsx";
 
 type Page = "home" | "puzzles";
 
@@ -23,24 +24,18 @@ function App() {
           onClick={() => setPage("puzzles")}
           aria-current={page === "puzzles" ? "page" : undefined}
         >
-          Play
+          About
         </button>
       </nav>
 
       {page === "home" ? (
         <section className="page">
           <h1>Play Chess over the board</h1>
-          <button
-          type="button"
-          onClick={() => setPage("puzzles")}
-          className="puzzle-button"
-          >
-            Play
-          </button>
+          <ChessBoard/>
         </section>
       ) : (
         <section className="page">
-          <h1>Play</h1>
+          <h1>About</h1>
         </section>
       )}
     </main>

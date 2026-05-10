@@ -12,7 +12,7 @@
 // -4 = black rook
 // -5 = black queen
 // -6 = black king
-function initializeBoard() {
+export function chessBoard() {
 
   let board = [
                         [[-4,-2,-3,-5,-6,-3,-2,-4],
@@ -23,11 +23,6 @@ function initializeBoard() {
                         [ 0, 0, 0, 0, 0, 0, 0, 0],
                         [ 1, 1, 1, 1, 1, 1, 1, 1],
                         [ 4, 2, 3, 5, 6, 3, 2, 4]]];
-  let white_king_moved = false;
-  let black_king_moved = false;
-  let 
+  <p>Chess Board</p>
   return board;
 }
-
-                    
-
